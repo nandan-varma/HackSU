@@ -1,0 +1,35 @@
+.Home {
+    display: block;
+    text-align: left;
+  }
+  
+  .text-object {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    color: #472f32;
+  }
+  
+  h1 {
+    font-family: "Oswald", sans-serif;
+    font-size: 100px;
+    font-style: italic;
+    color: #df766c
+  }
+  
+  h2 {
+    font-family: "Permanent Marker", cursive;
+    font-size: 65px;
+  }
+  
+  h3 {
+    font-family: "Caveat", cursive;
+    font-size: 65px;
+    letter-spacing: 0.5rem;
+  }
+
+.interest-form-button {
+  position: absolute;
+  top: 47%;
+  right: 20%;
+}

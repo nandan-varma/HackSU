@@ -10,9 +10,9 @@ const Navbar = () => {
             <img src={ACMLogo} alt="ACM"></img>
         </div>
         <nav className="navbar-menu">
-          <Link to="/" style={{color: "inherit", textDecoration: "none"}}>Home</Link>
-          <Link to="/about" style={{color: "inherit", textDecoration: "none"}}>About Us</Link>
-          <Link to="/theme" style={{color: "inherit", textDecoration: "none"}}>Theme</Link>
+          <Link className='animate home' to="/" style={{color: "inherit", textDecoration: "none"}}>Home</Link>
+          <Link className='animate about' to="/about" style={{color: "inherit", textDecoration: "none"}}>About Us</Link>
+          <Link className='animate theme'to="/theme" style={{color: "inherit", textDecoration: "none"}}>Theme</Link>
         </nav>
         <div className="navbar-right">
         </div>

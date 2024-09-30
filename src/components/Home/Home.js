@@ -48,9 +48,9 @@ function Home() {
         <h1>Hack SU</h1>
         <h2>Coming Soon...</h2>
         <h3>{formatTime(timerDays)}:{formatTime(timerHours)}:{formatTime(timerMinutes)}:{formatTime(timerSeconds)}</h3>
-      </div>
-      <div className="interest-form-button">
-        <InterestButton/>
+        <div className="interest-form-button">
+          <InterestButton/>
+        </div>
       </div>
     </div>
   );

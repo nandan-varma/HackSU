@@ -1,35 +1,34 @@
 .Home {
     display: block;
     text-align: left;
-  }
+}
   
-  .text-object {
-    position: absolute;
-    top: 20%;
-    left: 10%;
+.text-object {
+    display: grid;
+    place-items: center;
     color: #472f32;
-  }
+}
   
-  h1 {
+h1 {
     font-family: "Oswald", sans-serif;
-    font-size: 100px;
-    font-style: italic;
+    font-size: 140px;
+    /* font-style: italic; */
     color: #df766c
-  }
+}
   
-  h2 {
+h2 {
+    margin-top: -80px;
     font-family: "Permanent Marker", cursive;
     font-size: 65px;
-  }
+}
   
-  h3 {
+h3 {
+    margin-top: -50px;
     font-family: "Caveat", cursive;
     font-size: 65px;
     letter-spacing: 0.5rem;
-  }
+}
 
 .interest-form-button {
-  position: absolute;
-  top: 47%;
-  right: 19%;
+    margin-top: -10px;
 }

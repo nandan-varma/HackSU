@@ -8,6 +8,8 @@ function Home() {
   const [timerMinutes, setTimerMinutes] = useState("00");
   const [timerSeconds, setTimerSeconds] = useState("00");
 
+  const formatTime = (t) => t < 10 ? '0' + t : t;
+
   let interval = useRef();
 
   const startTimer = () => {
@@ -45,7 +47,7 @@ function Home() {
       <div className="text-object">
         <h1>Hack SU</h1>
         <h2>Coming Soon...</h2>
-        <h3>{timerDays}:{timerHours}:{timerMinutes}:{timerSeconds}</h3>
+        <h3>{formatTime(timerDays)}:{formatTime(timerHours)}:{formatTime(timerMinutes)}:{formatTime(timerSeconds)}</h3>
       </div>
       <div className="interest-form-button">
         <InterestButton/>

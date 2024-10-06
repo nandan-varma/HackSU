@@ -30,3 +30,10 @@
 .button-35:hover {
   box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
 }
+
+/* for mobile devices */
+@media (max-width: 768px) {
+  .button-35 {
+    font-size: 2rem;
+  }
+}

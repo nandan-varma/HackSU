@@ -13,7 +13,7 @@ h1 {
     font-family: "Oswald", sans-serif;
     font-size: 140px;
     /* font-style: italic; */
-    color: #df766c
+    color: #df766c;
 }
   
 h2 {
@@ -31,4 +31,26 @@ h3 {
 
 .interest-form-button {
     margin-top: -10px;
+}
+
+/* for mobile devicess */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 80px;
+    }
+
+    h2 {
+        font-size: 40px;
+        margin-top: -40px;
+    }
+
+    h3 {
+        font-size: 40px;
+        margin-top: -30px;
+        letter-spacing: 0.2rem;
+    }
+
+    .interest-form-button {
+        margin-top: 10px;
+    }
 }

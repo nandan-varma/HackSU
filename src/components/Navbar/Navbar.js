@@ -11,8 +11,9 @@ const Navbar = () => {
         </div>
         <nav className="navbar-menu">
           <Link className='animate home' to="/" style={{color: "inherit", textDecoration: "none"}}>Home</Link>
-          <Link className='animate about' to="/about" style={{color: "inherit", textDecoration: "none"}}>About Us</Link>
           <Link className='animate theme'to="/theme" style={{color: "inherit", textDecoration: "none"}}>Theme</Link>
+          <Link className='animate faq'to="/faq" style={{color: "inherit", textDecoration: "none"}}>FAQ</Link>
+          <Link className='animate about' to="/about" style={{color: "inherit", textDecoration: "none"}}>About Us</Link>
         </nav>
         <div className="navbar-right">
         </div>

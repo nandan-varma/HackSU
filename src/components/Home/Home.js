@@ -12,19 +12,24 @@ function Home() {
 
   let interval = useRef();
 
-  const startTimer = () => {
+  const calculateTimeLeft = () => {
     const countDownDate = new Date("Febuary 1, 2025 12:00:00").getTime();
+    const now = new Date().getTime();
+    const distance = countDownDate - now;
 
-    interval = setInterval(() => {
-      const now = new Date().getTime();
-      const distance = countDownDate - now;
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor(distance % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60) / (1000 * 60)));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      const hours = Math.floor(distance % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
-      const minutes = Math.floor((distance % (1000 * 60 * 60) / (1000 * 60)));
-      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    return { days, hours, minutes, seconds, distance };
+  };
 
-      if(distance < 0) {
+  const startTimer = () => {
+    interval.current = setInterval(() => {
+      const { days, hours, minutes, seconds, distance } = calculateTimeLeft();
+
+      if (distance < 0) {
         clearInterval(interval.current);
       } else {
         setTimerDays(days);
@@ -36,11 +41,17 @@ function Home() {
   };
 
   useEffect(() => {
+    const { days, hours, minutes, seconds } = calculateTimeLeft();
+    setTimerDays(days);
+    setTimerHours(hours);
+    setTimerMinutes(minutes);
+    setTimerSeconds(seconds);
+
     startTimer();
     return () => {
       clearInterval(interval.current);
     }
-  });
+  }, []);
 
   return (
     <div className="Home">

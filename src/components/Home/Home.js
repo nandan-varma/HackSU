@@ -57,7 +57,7 @@ function Home() {
     <div className="Home">
       <div className="text-object">
         <h1>Hack SU</h1>
-        <h2>Coming Soon...</h2>
+        <h2>Better Together!</h2>
         <h3>{formatTime(timerDays)}:{formatTime(timerHours)}:{formatTime(timerMinutes)}:{formatTime(timerSeconds)}</h3>
         <div className="interest-form-button">
           <InterestButton/>

@@ -1,0 +1,61 @@
+.Theme {
+    justify-content: space-between;
+    text-align: center;
+}
+
+.Theme-title {
+    padding: 1rem 0.5rem;
+    font-weight: 600;
+}
+
+.Theme-blocks {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.Theme-section {
+    box-sizing: border-box;
+    border-radius: 2rem;
+}
+
+.Theme-section:nth-child(1) {
+    background-color: #c1e8e8;
+    color: black;
+}
+
+.Theme-section:nth-child(2) {
+    background-color: #e3e8c1;
+    color: black;
+}
+
+.Theme-subtitle {
+    margin: 0;
+    padding: 1rem 0 0 0;
+}
+
+.Theme-content {
+    padding: 0.5rem 4rem 1rem 4rem;
+    font-weight: 600;
+}
+
+.Theme-list {
+    text-align: left;
+    padding: 0;
+}
+
+.Theme-listItem {
+    margin: 5px 0;
+}
+
+/* mobile devices */
+@media (max-width: 768px) {
+    .Theme-blocks {
+        flex-direction: column;
+    }
+
+    .Theme-section {
+        width: 100%;
+    }
+}

@@ -1,8 +1,9 @@
 .Home {
-    display: block;
+    display: grid;
+    place-items: center;
+    height: 65vh;
     text-align: left;
-}
-  
+      
 .text-object {
     display: grid;
     place-items: center;
@@ -13,24 +14,26 @@ h1 {
     font-family: "Oswald", sans-serif;
     font-size: 140px;
     /* font-style: italic; */
-    color: #df766c;
+    /* color: #df766c; */
+    color: #523e27;
 }
   
 h2 {
-    margin-top: -80px;
-    font-family: "Permanent Marker", cursive;
+    margin-top: -125px;
     font-size: 65px;
+    font-family: "Prompt", sans-serif;
+    color: #ce6857;
 }
   
 h3 {
     margin-top: -50px;
-    font-family: "Caveat", cursive;
-    font-size: 65px;
+    font-family: "Prompt", sans-serif;
+    font-size: 34px;
     letter-spacing: 0.5rem;
 }
 
 .interest-form-button {
-    margin-top: -10px;
+    margin-top: -20px;
 }
 
 /* for mobile devicess */
@@ -53,4 +56,6 @@ h3 {
     .interest-form-button {
         margin-top: 10px;
     }
+}
+
 }

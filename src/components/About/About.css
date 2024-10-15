@@ -1,46 +1,81 @@
-.About {
+.about-page {
     display: flex;
-    width: 80%;
-    margin:auto;
-    h1 {
-        font-size: 4rem;
-    }
-    p {
-        font-size: 1.9rem;
-    }
-    .logos-section {
-        margin-left: 3rem;
-        width: 45%;
-        margin-top: 4rem;
-        img {
-            width: 25rem;
-        }
-    }
-    /* for mobile devicess */
-    @media (max-width: 768px) {
-        display: flexbox;
-        width: 80%;
-        flex-wrap: wrap;
-        .text-section {
-            width: 100%;
-            h1 {
-                font-size: 3rem;
-            }
-            p {
-                font-size: 1.5rem;
-            }
-        }
-        .logos-section {
-            margin-top: -10px;
-            margin-left: 80px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            img {
-                flex: 50%;
-                width: 10rem;
-                padding: 1rem;
-            }
-        }
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
 }
+
+.about-content {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.about-heading {
+    padding: 0.5rem 1.5rem;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+}
+
+.about-subtext {
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding-bottom: 0.5rem;
+}
+
+.sponsors-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    /* center */
+    justify-content: center;
+}
+
+.sponsor-item {
+    height: 12rem;
+    width: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.sponsor-item img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* for images that takes more width use this, might be useful in future */
+/* .sponsor-item:nth-child(5) {
+    grid-column: span 2;
+} */
+
+/* for mobile devices */
+@media screen and (max-width: 768px) {
+    .about-page {
+        flex-direction: column-reverse;
+        margin: 0;
+    }
+
+    .about-content {
+        margin-right: 0;
+    }
+
+    .sponsors-grid {
+        margin-top: 20px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .sponsor-item {
+        max-width: 6rem;
+        max-height: 6rem;
+    }
 }

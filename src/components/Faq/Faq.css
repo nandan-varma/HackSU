@@ -1,27 +1,36 @@
 .faq-container {
-    width: 80%;
-    margin: 0 auto;
-    border-radius: 8px;
-  }
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 8px;
+}
 
-  .faq-title {
-    padding: 1rem;
-    margin: 0;
-    font-size: 4em;
-  }
-  
-  .faq-item {
-    margin-bottom: 20px;
-    padding: 15px;
-  }
-  
-  .faq-question {
-    font-size: 1.5em;
-    margin: 0 0 10px;
-    color: #472f32;
-    letter-spacing: 0.09rem; /* using custom font so fix for readability */
-  }
-  
-  .faq-answer {
-    font-size: 1.2em;
-  }
+.faq-title {
+  padding: 1rem;
+  margin: 0;
+  font-size: 4em;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+  padding: 15px 0px;
+}
+
+.faq-question {
+  font-size: 1.5em;
+  margin: 0 0 10px;
+  color: #472f32;
+  letter-spacing: 0.09rem;
+  /* using custom font so fix for readability */
+}
+
+.faq-answer {
+  font-size: 1.5rem;
+}
+
+.svg{
+  padding: 0 0.3rem;
+}
+
+.svg.rotate {
+  transform: rotate(180deg);
+}
